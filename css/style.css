@@ -43,8 +43,8 @@ h2 {
 }
 hr.botm-line {
     height: 3px;
-    width: 60px;
-    background: #ffb737;
+    /*width: 60px;*/
+    background: #D2FF28;
     position: relative;
     border: 0;
     margin: 20px 0 20px 0;
@@ -75,7 +75,6 @@ banner
 
 .navbar-brand
 {
-	font-family: 'Chewy', cursive;
 	font-size: 32px;
 }
 
@@ -459,6 +458,7 @@ footer
     line-height: 15px;
     text-align: left;
 }
+
 .social-icon li {
     float: left;
     width: 50px;
