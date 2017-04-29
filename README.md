@@ -3,7 +3,7 @@
 
 
 ## Description
-This is the website I created to show off the projects I have created. 
+This is the website I am creating to show off the projects I have created. 
 
 ## Screenshot
 ## PageLoad
