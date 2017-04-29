@@ -11,11 +11,11 @@ This is the website I created to show off the projects I have created.
 ## Front End Projects
 ![FrontEndProjects](img/screenshots/FrontEndProjects.png)
 ## BackEnd Projects
-![BackEndProjects](img/screenshots/BackEndProjects.png)
+![BackEndProjects](img/screenshots/BackendProjects.png)
 ## Side Projects
 ![SideProjects](img/screenshots/SideProjects.png)
 ## Lets Talk
-![LetsTalk](img/screenshots/letstalk.png)
+![LetsTalk](img/screenshots/LetsTalk.png)
 
 ## Contributors
 - [Justin Leggett](https://github.com/justinal64)
