@@ -467,6 +467,17 @@ footer
     text-align: center;
     margin-right: 5px;
 }
+
+.social-icon i {
+    /*float: left;*/
+    /*width: 150px;*/
+    font-size: 5em;
+    width: 80%;
+    height: 20%;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: .5em;
+}
 .bglight-blue {
     background-color: #3498DB;
 }
@@ -476,8 +487,8 @@ footer
 .bgdark-blue {
     background-color: #2C3E50;
 }
-.bglight-blue {
-    background-color: #3498DB;
+.bgbright-red {
+    background-color: #DC143C;
 }
 .top-footer {
     padding: 40px 0px;
@@ -500,6 +511,12 @@ footer
     color: #0cb8b6;
     text-transform: none;
 }
+
+.equal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media (min-width: 551px) and (max-width: 980px){
 
 }
