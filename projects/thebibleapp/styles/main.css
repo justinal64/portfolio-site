@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("../font/DK_Cool_Crayon.ttf") format("truetype"); }
+
+.kidsfont {
+  font-family: 'MyWebFont', Fallback, sans-serif; }
+
+#clouds {
+  background: #c9dbe9;
+  background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+  background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+  background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%); }
+
+/*Time to finalise the cloud shape*/
+.cloud {
+  width: 200px;
+  height: 60px;
+  background: #fff;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  position: relative; }
+
+.cloud:before, .cloud:after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg); }
+
+.cloud:after {
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px; }
+
+/*Time to animate*/
+.x1 {
+  -webkit-animation: moveclouds 15s linear infinite;
+  -moz-animation: moveclouds 15s linear infinite;
+  -o-animation: moveclouds 15s linear infinite; }
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+  left: 200px;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6;
+  /*opacity proportional to the size*/
+  /*Speed will also be proportional to the size and opacity*/
+  /*More the speed. Less the time in 's' = seconds*/
+  -webkit-animation: moveclouds 25s linear infinite;
+  -moz-animation: moveclouds 25s linear infinite;
+  -o-animation: moveclouds 25s linear infinite; }
+
+.x3 {
+  left: -250px;
+  top: -200px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8;
+  /*opacity proportional to the size*/
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite; }
+
+.x4 {
+  left: 470px;
+  top: -250px;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.75;
+  /*opacity proportional to the size*/
+  -webkit-animation: moveclouds 18s linear infinite;
+  -moz-animation: moveclouds 18s linear infinite;
+  -o-animation: moveclouds 18s linear infinite; }
+
+.x5 {
+  left: -150px;
+  top: -150px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8;
+  /*opacity proportional to the size*/
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite; }
+
+@-webkit-keyframes moveclouds {
+  0% {
+    margin-left: 1000px; }
+  100% {
+    margin-left: -1000px; } }
+
+@-moz-keyframes moveclouds {
+  0% {
+    margin-left: 1000px; }
+  100% {
+    margin-left: -1000px; } }
+
+@-o-keyframes moveclouds {
+  0% {
+    margin-left: 1000px; }
+  100% {
+    margin-left: -1000px; } }
+
+.readbiblebtn {
+  z-index: 1;
+  position: absolute;
+  font-size: 3em;
+  left: 0;
+  right: 0;
+  top: 30%;
+  margin: 0 auto;
+  width: 50%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background: #2ecc72;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #33a363;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .readbiblebtn:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: 0 auto;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(-50%);
+    background-color: #30b566;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .readbiblebtn:active {
+    box-shadow: none; }
+    .readbiblebtn:active:after {
+      opacity: 1;
+      transform-origin: 50% 50%;
+      transform: scale(12) translateZ(0); }
+  .readbiblebtn span {
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase; }
+
+.verse_of_day {
+  position: absolute;
+  width: 33%;
+  left: 33%;
+  bottom: 30%; }
+
+a[ng-click] {
+  cursor: pointer; }
+
+.readbible {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto; }
+  .readbible .bible_img img {
+    max-height: 350px; }
+  .readbible .bible_text {
+    margin-top: .5em; }
+    .readbible .bible_text span {
+      font-size: 1.5em; }
+  .readbible .bible_bookmark {
+    float: right; }
+
+.form_size {
+  position: absolute;
+  width: 50%;
+  left: 25%; }
+
+.box {
+  margin: 50px auto;
+  background: #5FCF80; }
+
+.box:hover {
+  transform: rotate(360deg);
+  background: #9351A6;
+  border-radius: 50%; }
+
+.rotate {
+  transition: all 0.5s ease-in-out; }
+
+.rotate:hover {
+  transition: all 1s ease-in-out; }
+
+.animate-enter,
+.animate-leave {
+  -webkit-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -moz-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -ms-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -o-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  position: relative;
+  display: block; }
+
+.animate-enter.animate-enter-active,
+.animate-leave {
+  opacity: 1;
+  top: 0;
+  height: 30px; }
+
+.animate-leave.animate-leave-active,
+.animate-enter {
+  opacity: 0;
+  top: -50px;
+  height: 0px; }
+
+select {
+  display: inline;
+  width: 20%; }
+
+.adultfont {
+  font-family: sans-serif; }
+
+md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
+  min-height: 900px; }

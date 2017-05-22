@@ -1,0 +1,21 @@
+<div class="container input-field col s12 adultfont center-align">
+    <div class="row">
+        <h1>Adult Bible</h1>
+        <span>Choose a book</span>
+        <select ng-model="selectedBook" ng-change="bookSelected(selectedBook)">
+            <option  value="" selected>Choose a Book</option>
+            <option ng-repeat="bible in booksOfBibles" value="{{bible.book_id}}">{{bible.book_name}}</option>
+        </select>
+        <select ng-show="showchapters" ng-model="selectedChapter" ng-change="chapterLookup(selectedChapter)">
+            <option  value="" selected>Choose a Chapter</option>
+            <option ng-repeat="chapter in chapters">{{chapter}}</option>  <!-- | filter:selectedBook -->
+        </select>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div class="bibleverse left-align" ng-repeat="verse in verses">
+                <p>{{verse.verse_id}} {{verse.verse_text}}</p>
+            </div>
+        </div>
+    </div>
+</div>

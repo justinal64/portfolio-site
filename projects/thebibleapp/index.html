@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Bible App</title>
+    <link rel="stylesheet" href="./node_modules/angular-material/angular-material.min.css" />
+    <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="icon" href="./img/favicon.png">
+</head>
+
+<body class="kidsfont" ng-app="TheBibleApp" ng-controller="NavCtrl" ng-cloak>
+    <!-- Navigation -->
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h1><a href="#/">The Bible App</a></h1>
+            <span flex></span>
+            <md-button class="btn1" ng-click="kidsbible()">Kids Bible</md-button>
+            <md-button class="btn1" ng-click="dbp()">Adult Bible</md-button>
+            <md-button class="btn1" ng-if="!userloggedin" ng-click="login()">Login</md-button>
+            <md-button class="btn1" ng-if="userloggedin" ng-click="logout()">Logout {{user.username}}</md-button>
+        </div>
+    </md-toolbar>
+    <div ng-view>
+        <!-- partials go here -->
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./node_modules/angular-animate/angular-animate.min.js"></script>
+<script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
+<script src="./node_modules/angular-aria/angular-aria.min.js"></script>
+<script src="./node_modules/angular-material/angular-material.min.js"></script>
+<script src="./node_modules/angular-route/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="./javascript/app.js"></script>
+<script type="text/javascript" src="./javascript/AppConstant.js"></script>
+<script type="text/javascript" src="./javascript/AppConfig.js"></script>
+<script src="./javascript/factories/AuthFactory.js" type="text/javascript" charset="utf-8"></script>
+<script src="./javascript/factories/DBPFactory.js" type="text/javascript" charset="utf-8"></script>
+<script src="./javascript/factories/UserFactory.js" type="text/javascript" charset="utf-8"></script>
+<script src="./javascript/factories/BibleFactory.js" type="text/javascript" charset="utf-8"></script>
+<script src="./javascript/controllers/NavCtrl.js" type="text/javascript" charset="utf-8"></script>
+<script src="./javascript/controllers/AuthCtrl.js" type="text/javascript" charset="utf-8"></script>
+<script src="./javascript/controllers/HomePageCtrl.js" type="text/javascript" charset="utf-8"></script>
+<script src="./javascript/controllers/ReadBibleCtrl.js" type="text/javascript" charset="utf-8"></script>
+<script src="./javascript/controllers/DBPCtrl.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
