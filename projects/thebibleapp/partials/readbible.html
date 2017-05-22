@@ -1,0 +1,25 @@
+<md-content layout="row" flex>
+    <md-tabs md-selected="data.selectedIndex" flex>
+        <md-tab ng-repeat="bible in bibles" ng-click="lastread(bible)" md-selected="data.selectedIndex" label="{{bible.title}}">
+            <md-content layout-padding>
+                <div class="readbible" ng-cloak>
+                    <div>
+                        <div>
+                            <div class="bible_img" >
+                                <img ng-src="{{bible.url}}" class="box rotate" ng-animate="'animate'">
+                            </div>
+                            <div class="bible_text">
+                                <span>{{bible.story}}</span>
+                            </div>
+                            <div class="row">
+                                <audio id="readAudiobible" ng-src=""></audio>
+                                <a class="btn-flat" ng-click="play(bible.story)">Read the Bible</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </md-content>
+        </md-tab>
+    </md-tabs>
+</md-content>
+

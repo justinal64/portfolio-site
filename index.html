@@ -1,237 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio Website</title>
-	<link rel="icon" href="./img/icon.ico">
+    <link rel="icon" href="./img/icon.ico">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/font-mfizz.css">
-  </head>
-  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-  	<!--banner-->
-	<section id="banner" class="banner">
-		<div class="bg-color">
-			<nav class="navbar navbar-default navbar-fixed-top">
-			  <div class="container">
-			  	<div class="col-md-12">
-				    <div class="navbar-header">
-				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <link rel="stylesheet" type="text/css" href="css/font-mfizz.css">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!--banner-->
+    <section id="banner" class="banner">
+        <div class="bg-color">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				      </button>
-				      <a class="navbar-brand" href="#">JL Designs</a>
-				    </div>
-				    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-				      <ul class="nav navbar-nav">
-				        <li class="active"><a href="#banner">Home</a></li>
-				        <li class=""><a href="#projects">Projects</a></li>
-				        <li class=""><a href="#contact">Contact</a></li>
-				      </ul>
-				    </div>
-				</div>
-			  </div>
-			</nav>
-			<div class="container">
-				<div class="row">
-					<div class="banner-info">
-						<div class="overlay-detail text-center">
-			      	<a href="#projects"><i class="fa fa-angle-down"></i></a>
-			      </div>		
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--/ banner-->
-	<!--projects-->
-	<section id="projects" class="section-padding">
-		<div class="container">
-			<div class="row text-center padding-bottom">
-				<h1><span class="headline">Front End Projects</span></h1>
-			</div>
-			<div class="icon text-center">
-							<img class="tech_icon" src="./img/tech_icons/javascript.png" alt="javascript">
-							<img class="tech_icon" src="./img/tech_icons/jquery.png" alt="jquery">
-							<img class="tech_icon" src="./img/tech_icons/html5.png" alt="html5">
-							<img class="tech_icon" src="./img/tech_icons/sass.png" alt="sass">							
-							<img class="tech_icon" src="./img/tech_icons/css3.png" alt="css">
-							<img class="tech_icon" src="./img/tech_icons/bootstrap.png" alt="bootstrap">
-							<img class="tech_icon" src="./img/tech_icons/materialize.png" alt="materialize">
-							<img class="tech_icon" src="./img/tech_icons/angular.jpg" alt="angular">
-							<img class="tech_icon" src="./img/tech_icons/grunt-logo.png" alt="grunt">
-							<img class="tech_icon" src="./img/tech_icons/webpack.png" alt="webpack">							
-							<img class="tech_icon" src="./img/tech_icons/npm.png" alt="npm">
-			</div>
-			<div class="row equal">
-				<div class="col-md-4 col-sm-4">
-					<div class="service-info">
-						<div class="icon-info">
-							<h3>TheBibleApp</h3>
-							<div class="">
-								<h3><a target="_blank" href="https://github.com/justinal64/TheBibleApp">See the code</a></h3>
-							</div>
-							<p>
-								I struggled to get my children to listen to the bible being read to them(4 children under the age of 3), and this is the solution I came up with.
-								I use simple animations(using<a href="https://docs.angularjs.org/api/ngAnimate"> ng-animate</a>) to hold the childs attention while 
-								the verses are read to them. With the click of a button the user can also be rerouted to an adult version of the app that uses the Digital Bible 
-								Platform API to pull back the King James version of the bible. This project combines my knowledge of CSS, HTML, Javascript, Angular 1, Materialize, Digital Bible Platform API, and Firebase.
-							</p>
-							<!--<div class="text-center">
-								<h3><a target="_blank" href="https://github.com/justinal64/TheBibleApp">See the code</a></h3>
-								<h3>Use the App(Coming Soon)</h3>
-							</div>-->
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="service-info">
-						<div class="icon-info">
-							<h3>Local Weather</h3>
-								<h3><a target="_blank" href="https://github.com/justinal64/TheBibleApp">See the code</a></h3>
-							
-							<p>I created this project to fetch weather conditions from the <a href="https://openweathermap.org/">openweather api</a>.
-							I would then allow the user to choose a date and location and I would display the weather conditions for that location. I also used firebase to
-							register a user and login, so the user could come back to the website at any time and see what search they have completed in the past. 
-							This project combines my knowledge of CSS, HTML, Javascript, Angular 1, firebase, and I used an API for the first time.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="service-info">
-						<div class="icon-info">
-							<h3>Checkers</h3>
-								<h3><a target="_blank" href="http://codepen.io/justinal64/pen/mEaQYv">Use the App</a></h3>							
-							<p>I created this project to push the limits of what I understood about javascript. This project taught me how to add and remove event listeners 
-								based on what the user had clicked. This project combines my knowledge of CSS, HTML, and Javascript.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row text-center padding-bottom">
-			<h1><span class="headline">Back End Projects</span></h1>
-			</div>
-			<div class="icon text-center">
-							<img class="tech_icon" src="./img/tech_icons/aspnet.jpeg" alt="asp.net">
-							<img class="tech_icon" src="./img/tech_icons/c.png" alt="csharp">
-							<img class="tech_icon" src="./img/tech_icons/sql.png" alt="sql">
-							<img class="tech_icon" src="./img/tech_icons/visualstudio.png" alt="visual studio">							
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-4">
-					<div class="service-info">
-						<div class="icon-info">
-							<h3>Terminal Interface</h3>
-							<h3><a target="_blank" href="https://github.com/Team-Slytherin/Bangazon-Terminal-Interface">See the code</a></h3>
-							<p>This project was created using the <a href="https://en.wikipedia.org/wiki/Sprint_(software_development)">sprint methodology</a>. In this project 
-							I was paired up with 4 other classmates. The goal of this project was to take in input via the terminal and give the user a amazon like checkout experience. 
-							We completed this project a week early, so we decided to add extra features to the app. The features I was responsible for was validation all information 
-							the customer entered. I used C# and regex to validate all input from the user from the name to the phone number. In this project I used SQL, C#, Regex, and LINQ. 
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="service-info">
-						<div class="icon-info">
-							<h3>Coming Soon</h3>
-							<p>Code Coming Soon</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="service-info">
-						<div class="icon-info">
-							<h3>Coming Soon</h3>
-							<p>Code Coming Soon</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row text-center padding-bottom">
-			<h1><span class="headline">Side Projects</span></h1>
-			</div>
-			<div class="icon text-center">
-							<img class="tech_icon" src="./img/tech_icons/react.png" alt="react">
-							<img class="tech_icon" src="./img/tech_icons/javascript.png" alt="javascript">
-							<img class="tech_icon" src="./img/tech_icons/jquery.png" alt="jquery">
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-4">
-					<div class="service-info">
-						<div class="icon-info">
-							<h3>KFLv2</h3>
-							<h3><a target="_blank" href="https://github.com/justinal64/TheBibleApp">Use the App(Coming July 2017)</a></h3>
-							<p>
-								This project is a rewrite of an app I wrote for android before attending NSS and 
-								it can be found here <a target="_blank" href="https://github.com/justinal64/KFL">KFL</a>. Currently I am about 1/3 
-								of the way through the project and I am loving react-native. I used React Native, CSS, and all the design skills I have to 
-								put this project together.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="service-info">
-						<div class="icon-info">
-							<h3>Porfolio Website</h3>
-							<h3><a target="_blank" href="https://github.com/justinal64/portfolio-site">See The Code</a></h3>							
-							<p>
-								This is the code for my portfolio website. I used bootstrap, css, flexbox, and javascript to create 
-								this website.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="service-info">
-						<div class="icon-info">
-							<h3>Coming Soon</h3>
-							<!--<h3><a target="_blank" href="https://github.com/justinal64/portfolio-site">See The Code</a></h3>							-->
-							<p>Code Coming Soon</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--/ projects-->
+                            <a class="navbar-brand" href="#">JL Designs</a>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#banner">Home</a></li>
+                                <li class=""><a href="#projects">Projects</a></li>
+                                <li class=""><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="banner-info">
+                        <div class="overlay-detail text-center">
+                            <a href="#projects"><i class="fa fa-angle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ banner-->
+    <!--projects-->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="row text-center padding-bottom">
+                <h1><span class="headline">Front End Projects</span></h1>
+            </div>
+            <div class="icon text-center">
+                <img class="tech_icon" src="./img/tech_icons/javascript.png" alt="javascript">
+                <img class="tech_icon" src="./img/tech_icons/jquery.png" alt="jquery">
+                <img class="tech_icon" src="./img/tech_icons/html5.png" alt="html5">
+                <img class="tech_icon" src="./img/tech_icons/sass.png" alt="sass">
+                <img class="tech_icon" src="./img/tech_icons/css3.png" alt="css">
+                <img class="tech_icon" src="./img/tech_icons/bootstrap.png" alt="bootstrap">
+                <img class="tech_icon" src="./img/tech_icons/materialize.png" alt="materialize">
+                <img class="tech_icon" src="./img/tech_icons/angular.jpg" alt="angular">
+                <img class="tech_icon" src="./img/tech_icons/grunt-logo.png" alt="grunt">
+                <img class="tech_icon" src="./img/tech_icons/webpack.png" alt="webpack">
+                <img class="tech_icon" src="./img/tech_icons/npm.png" alt="npm">
+            </div>
+            <div class="row equal">
+                <div class="col-md-4 col-sm-4">
+                    <div class="service-info">
+                        <div class="icon-info">
+                            <h3>TheBibleApp</h3>
+                            <div class="">
+                                <h3><a target="_blank" href="https://github.com/justinal64/TheBibleApp">See the code</a></h3>
+                                <h3><a target="_blank" href="./projects/thebibleapp/index.html">Visit the Website</a></h3>
+                            </div>
+                            <p>
+                                I struggled to get my children to listen to the bible being read to them(4 children under the age of 3), and this is the solution I came up with. I use simple animations(using<a href="https://docs.angularjs.org/api/ngAnimate"> ng-animate</a>)
+                                to hold the childs attention while the verses are read to them. With the click of a button the user can also be rerouted to an adult version of the app that uses the Digital Bible Platform API to pull back the King James
+                                version of the bible. This project combines my knowledge of CSS, HTML, Javascript, Angular 1, Materialize, Digital Bible Platform API, and Firebase.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="service-info">
+                        <div class="icon-info">
+                            <h3>Local Weather</h3>
+                            <h3><a target="_blank" href="https://github.com/justinal64/TheBibleApp">See the code</a></h3>
 
-	<!--contact-->
-	<section id="contact" class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h1 class="ser-title">Lets talk</h1>
-				</div>
-				<div class="row">
-					<div class="col-md-3 col-sm-3 col-xs-6 text-center social-icon">
-						<a target="_blank" href="https://www.fb.me/justin.leggett.12"><i class="fa fa-facebook bglight-blue info-sec"></i></a>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6 text-center social-icon">
-						<a target="_blank" href="https://www.linkedin.com/in/justinleggett/"><i class="fa fa-linkedin bgdark-blue info-sec"></i></a>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6 text-center social-icon">
-						<a target="_blank" href="https://twitter.com/justinal64"><i class="fa fa-twitter bglight-blue info-sec"></i></a>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6 text-center social-icon">
-						<a  href="mailto:justinal8183@gmail.com"><i class="fa fa-envelope-o bgbright-red info-sec"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-    
+                            <p>I created this project to fetch weather conditions from the <a href="https://openweathermap.org/">openweather api</a>. I would then allow the user to choose a date and location and I would display the weather conditions for
+                                that location. I also used firebase to register a user and login, so the user could come back to the website at any time and see what search they have completed in the past. This project combines my knowledge of CSS, HTML,
+                                Javascript, Angular 1, firebase, and I used an API for the first time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="service-info">
+                        <div class="icon-info">
+                            <h3>Checkers</h3>
+                            <h3><a target="_blank" href="http://codepen.io/justinal64/pen/mEaQYv">Use the App</a></h3>
+                            <p>I created this project to push the limits of what I understood about javascript. This project taught me how to add and remove event listeners based on what the user had clicked. This project combines my knowledge of CSS, HTML,
+                                and Javascript.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center padding-bottom">
+                <h1><span class="headline">Back End Projects</span></h1>
+            </div>
+            <div class="icon text-center">
+                <img class="tech_icon" src="./img/tech_icons/aspnet.jpeg" alt="asp.net">
+                <img class="tech_icon" src="./img/tech_icons/c.png" alt="csharp">
+                <img class="tech_icon" src="./img/tech_icons/sql.png" alt="sql">
+                <img class="tech_icon" src="./img/tech_icons/visualstudio.png" alt="visual studio">
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="service-info">
+                        <div class="icon-info">
+                            <h3>Terminal Interface</h3>
+                            <h3><a target="_blank" href="https://github.com/Team-Slytherin/Bangazon-Terminal-Interface">See the code</a></h3>
+                            <p>This project was created using the <a href="https://en.wikipedia.org/wiki/Sprint_(software_development)">sprint methodology</a>. In this project I was paired up with 4 other classmates. The goal of this project was to take
+                                in input via the terminal and give the user a amazon like checkout experience. We completed this project a week early, so we decided to add extra features to the app. The features I was responsible for was validation all
+                                information the customer entered. I used C# and regex to validate all input from the user from the name to the phone number. In this project I used SQL, C#, Regex, and LINQ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="service-info">
+                        <div class="icon-info">
+                            <h3>Coming Soon</h3>
+                            <p>Code Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="service-info">
+                        <div class="icon-info">
+                            <h3>Coming Soon</h3>
+                            <p>Code Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center padding-bottom">
+                <h1><span class="headline">Side Projects</span></h1>
+            </div>
+            <div class="icon text-center">
+                <img class="tech_icon" src="./img/tech_icons/react.png" alt="react">
+                <img class="tech_icon" src="./img/tech_icons/javascript.png" alt="javascript">
+                <img class="tech_icon" src="./img/tech_icons/jquery.png" alt="jquery">
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="service-info">
+                        <div class="icon-info">
+                            <h3>KFLv2</h3>
+                            <h3><a target="_blank" href="https://github.com/justinal64/TheBibleApp">Use the App(Coming July 2017)</a></h3>
+                            <p>
+                                This project is a rewrite of an app I wrote for android before attending NSS and it can be found here <a target="_blank" href="https://github.com/justinal64/KFL">KFL</a>. Currently I am about 1/3 of the way through the
+                                project and I am loving react-native. I used React Native, CSS, and all the design skills I have to put this project together.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="service-info">
+                        <div class="icon-info">
+                            <h3>Porfolio Website</h3>
+                            <h3><a target="_blank" href="https://github.com/justinal64/portfolio-site">See The Code</a></h3>
+                            <p>
+                                This is the code for my portfolio website. I used bootstrap, css, flexbox, and javascript to create this website.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="service-info">
+                        <div class="icon-info">
+                            <h3>Coming Soon</h3>
+                            <!--<h3><a target="_blank" href="https://github.com/justinal64/portfolio-site">See The Code</a></h3>							-->
+                            <p>Code Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ projects-->
+
+    <!--contact-->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="ser-title">Lets talk</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-6 text-center social-icon">
+                        <a target="_blank" href="https://www.fb.me/justin.leggett.12"><i class="fa fa-facebook bglight-blue info-sec"></i></a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 text-center social-icon">
+                        <a target="_blank" href="https://www.linkedin.com/in/justinleggett/"><i class="fa fa-linkedin bgdark-blue info-sec"></i></a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 text-center social-icon">
+                        <a target="_blank" href="https://twitter.com/justinal64"><i class="fa fa-twitter bglight-blue info-sec"></i></a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 text-center social-icon">
+                        <a href="mailto:justinal8183@gmail.com"><i class="fa fa-envelope-o bgbright-red info-sec"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
-    
-  </body>
+
+</body>
+
 </html>
